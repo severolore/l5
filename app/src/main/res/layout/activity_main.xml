@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distância"
+        android:textSize="25sp"
+        android:id="@+id/tvdistancia"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="(em km)"
+        android:id="@+id/etdistancia"
+        android:layout_margin="20dp"
+        android:inputType="number" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custo por Litro: "
+        android:textSize="25sp"
+        android:id="@+id/tvcusto"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="(em R$)"
+        android:id="@+id/etcusto"
+        android:layout_margin="20dp"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Autonomia do Veículo: "
+        android:textSize="25sp"
+        android:id="@+id/tvautonomia"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="(em km/l)"
+        android:id="@+id/etautonomia"
+        android:layout_margin="20dp"
+        android:inputType="number" />
+    <Button
+        android:id="@+id/btcalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvresultado"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:text="Total do custo da viagem: "
+        android:textSize="25sp" />
+
+
+</LinearLayout>
+</ScrollView>
